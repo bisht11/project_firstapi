@@ -37,3 +37,12 @@
 20210924	08:31:09	b0351b0d-ecd5-449e-9993-bf3ffc729f49	PUT	undefined	/employees
 20221102	22:14:27	71bfbd01-9cf3-45b3-b860-76570b4da4c4	GET	undefined	/employees
 20221102	22:14:33	5acc1df9-eac1-4a8c-aec5-b0cdd731a9a9	POST	undefined	/employees
+20221103	21:57:22	8f3c25e2-e4a6-490f-863e-ef8f9fc77f7f	POST	undefined	/employees
+20221104	12:39:23	515825c9-a6d3-41bc-841d-aea7fb4a097c	GET	undefined	/employees
+20221104	12:41:18	68a23429-d2ff-47db-845b-ae36a5b13195	POST	undefined	/register
+20221104	21:57:08	bf1b01d1-0690-47f1-8e3a-22dc518ca49a	POST	undefined	/auth
+20221104	22:04:54	39b04e1c-3709-454a-abd9-1f8e79dac6d6	POST	undefined	/auth
+20221104	22:06:40	8870a506-2dd6-43e2-b2f7-ac714dc8bcdb	POST	undefined	/register
+20221104	22:06:59	f9437401-b8a5-44cd-a522-67c5417971c0	POST	undefined	/register
+20221104	22:07:15	7c06fa54-bf57-4d58-bf72-475ded94ed7d	POST	undefined	/register
+20221104	22:07:31	0a1dba4d-b58b-41e7-bc0b-2a5222301f1d	POST	undefined	/auth
