@@ -5,6 +5,8 @@ const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
+const verifyJWT = require("./middleware/verifyJWT");
+const cookieParser = require("cookie-parser");
 const PORT = process.env.PORT || 3500;
 
 // custom middleware logger
@@ -19,16 +21,29 @@ app.use(express.urlencoded({ extended: false }));
 // built-in middleware for json
 app.use(express.json());
 
-//serve static files
+// middleware for cookies
+app.use(cookieParser());
+
+//serve static files(CSS)
 app.use("/", express.static(path.join(__dirname, "/public")));
 
-// routes
+// routes (without JWT protection)
 app.use("/", require("./routes/root"));
+// user register route
 app.use("/register", require("./routes/register"));
+// user auth route
 app.use("/auth", require("./routes/auth"));
+// refresh token route (issues a new access token)
+app.use("/refresh", require("./routes/refresh"));
+// logout route (clearing refreshtoken from db)
+app.use("/logout", require("./routes/logout"));
 
+//JWT protected routes
+app.use(verifyJWT);
+// employees route
 app.use("/employees", require("./routes/api/employees"));
 
+// custom 404
 app.all("*", (req, res) => {
   res.status(404);
   if (req.accepts("html")) {
@@ -40,6 +55,8 @@ app.all("*", (req, res) => {
   }
 });
 
+// custom errorhandler
 app.use(errorHandler);
 
+// listening to portr
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

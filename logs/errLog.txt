@@ -1,0 +1,2 @@
+20221112	02:01:24	ba5bbc13-880f-45ff-a375-71884a37fc6d	TypeError: res.sensStatus is not a function
+20221113	13:32:49	a52a5088-d8e7-4f32-bf77-1348d69d37cd	ReferenceError: whitelist is not defined
