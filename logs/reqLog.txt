@@ -181,3 +181,7 @@
 20221119	01:27:06	eec2ef53-7a2a-43bb-a4af-5c2565446dd7	DELETE	undefined	/employees
 20221119	01:27:07	b06159a9-54bd-40f4-9209-8d7438adc637	DELETE	undefined	/employees
 20221119	01:27:12	01b43bff-dd84-4706-9a18-d3dae6cf720d	DELETE	undefined	/employees
+20221119	13:17:05	acb222dd-a3d5-4776-977a-d7f18afa108f	POST	undefined	/auth
+20221119	13:17:14	1d51e4f2-fb28-4720-88d7-43673999c36c	GET	undefined	/refresh
+20221119	13:17:39	942d4f33-e240-43aa-bfb6-5b19d82deb50	POST	undefined	/auth
+20221119	13:17:42	c9ad3926-b7b2-4b38-b3c6-4bc4d6380e08	GET	undefined	/refresh
