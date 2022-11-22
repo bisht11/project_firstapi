@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const env = require("dotenv");
 
 //verification middleware
 const verifyJWT = (req, res, next) => {
